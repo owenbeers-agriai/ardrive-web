@@ -41114,14 +41114,14 @@ n=C.k.gE().w(n)
 n=C.i.gE().w(n)
 m.push(new E.cH(l,H.ak(n,"=","")))
 n=p.d
-if(n==="private"){m=o.e
+m=o.e
 l=C.k.gE().w("Drive-Privacy")
 l=C.i.gE().w(l)
 l=H.ak(l,"=","")
 n=C.k.gE().w(n)
 n=C.i.gE().w(n)
 m.push(new E.cH(l,H.ak(n,"=","")))
-n=p.e
+if(p.d==="private"){n=p.e
 m=o.e
 l=C.k.gE().w("Drive-Auth-Mode")
 l=C.i.gE().w(l)
