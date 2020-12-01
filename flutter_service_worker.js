@@ -6,7 +6,7 @@ const RESOURCES = {
   "sql-wasm.js": "63ac58d843bccce6c3c4b0c1cd6c4422",
 "version.json": "b707f51c1c0147506d74a238ff252173",
 "pst.min.js": "a0563cecdda21dd1f8b4056c7300f842",
-"main.dart.js": "dafb7ad78036aeaab24ad115b5fa0b8d",
+"main.dart.js": "c026433d598384f31a12f4c115f7ff3a",
 "index.html": "3bfcdcbc8d277f21ef53a3b42b4db18a",
 "/": "3bfcdcbc8d277f21ef53a3b42b4db18a",
 "favicon.png": "49623618e34e76925ba5a44f8dc95a89",
