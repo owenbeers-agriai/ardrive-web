@@ -29,7 +29,7 @@ const RESOURCES = {
 "index.html": "55b6738a8b2d1b66e06242620bf00641",
 "/": "55b6738a8b2d1b66e06242620bf00641",
 "version.json": "b707f51c1c0147506d74a238ff252173",
-"main.dart.js": "18925e646c43ad32fe1072cd337ecc08",
+"main.dart.js": "cffbdf56fda273892b3f26855d0f6437",
 "sql-wasm.wasm": "867016e4a77ae35dc11f37e333b95caa",
 "pst.min.js": "134b52087091caa3bd8103febe55fcd5",
 "sql-wasm.js": "63ac58d843bccce6c3c4b0c1cd6c4422",
