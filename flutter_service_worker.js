@@ -6,7 +6,7 @@ const RESOURCES = {
   "icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
 "icons/Icon-192.png": "885b984ac13230ad7e85436d0bf1adb3",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"assets/NOTICES": "9eac18030ce394150755d4072c073354",
+"assets/NOTICES": "412d3e7779d8176f778486472838e940",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/assets/fonts/Montserrat-Regular.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/assets/fonts/OpenSans-Regular.ttf": "3ed9575dcc488c3e3a5bd66620bdf5a4",
@@ -30,7 +30,7 @@ const RESOURCES = {
 "index.html": "94c54c56b4af11aa95811c64bbde6f2d",
 "/": "94c54c56b4af11aa95811c64bbde6f2d",
 "version.json": "b707f51c1c0147506d74a238ff252173",
-"main.dart.js": "5075d183b5ef972a6d1de34208c3a680",
+"main.dart.js": "60faf7d8d62c60c0778ed9af8b108c64",
 "sql-wasm.wasm": "867016e4a77ae35dc11f37e333b95caa",
 "pst.min.js": "134b52087091caa3bd8103febe55fcd5",
 "sql-wasm.js": "63ac58d843bccce6c3c4b0c1cd6c4422",
@@ -178,7 +178,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
