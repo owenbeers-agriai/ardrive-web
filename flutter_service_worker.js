@@ -13,7 +13,7 @@ const RESOURCES = {
 "assets/assets/fonts/OpenSans-Bold.ttf": "1025a6e0fb0fa86f17f57cc82a6b9756",
 "assets/assets/config/prod.json": "3d6c5819f04179660960f51274c830aa",
 "assets/assets/config/dev.json": "3d6c5819f04179660960f51274c830aa",
-"assets/assets/images/brand/logo-horiz-no-subtitle.png": "f9ddec68370837972d15343fd41648c5",
+"assets/assets/images/brand/logo-horiz-no-subtitle.png": "7f2b427acfa0012da79aa7a8251d148b",
 "assets/assets/images/brand/logo-vert-no-subtitle.png": "181c34ae51c6053ba9dc18035aac2399",
 "assets/assets/images/profile/profile_new_user_delete.png": "4c07314902033a8fbed0f37e3842449d",
 "assets/assets/images/profile/profile_new_user_upload.png": "170bdb068ff6561f47d3faf0a3ece0b1",
