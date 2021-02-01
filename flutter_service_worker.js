@@ -34,7 +34,7 @@ const RESOURCES = {
 "version.json": "b707f51c1c0147506d74a238ff252173",
 "favicon.png": "49623618e34e76925ba5a44f8dc95a89",
 "sql-wasm.wasm": "867016e4a77ae35dc11f37e333b95caa",
-"pst.min.js": "134b52087091caa3bd8103febe55fcd5"
+"pst.min.js": "87539e3b5c70a39f54490335f190d604"
 };
 
 // The application shell files that are downloaded before a service worker can
