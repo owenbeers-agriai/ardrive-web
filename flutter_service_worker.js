@@ -27,14 +27,14 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "index.html": "94c54c56b4af11aa95811c64bbde6f2d",
 "/": "94c54c56b4af11aa95811c64bbde6f2d",
-"main.dart.js": "c72fe63ed6cf87e6860144a99e474024",
+"main.dart.js": "2a1555ba406b426a441e7f8d186f6a7e",
 "icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
 "icons/Icon-192.png": "885b984ac13230ad7e85436d0bf1adb3",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"sql-wasm.js": "63ac58d843bccce6c3c4b0c1cd6c4422",
+"sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
 "version.json": "b707f51c1c0147506d74a238ff252173",
 "favicon.png": "49623618e34e76925ba5a44f8dc95a89",
-"sql-wasm.wasm": "867016e4a77ae35dc11f37e333b95caa",
+"sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
 "pst.min.js": "87539e3b5c70a39f54490335f190d604"
 };
 
