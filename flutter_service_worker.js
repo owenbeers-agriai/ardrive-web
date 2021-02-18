@@ -4,12 +4,12 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
-"main.dart.js": "c5c94dd4435e58129b7f57e19cf77882",
+"main.dart.js": "589389f6e1df5cd5f934f40546936447",
 "icons/Icon-192.png": "885b984ac13230ad7e85436d0bf1adb3",
 "icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
 "sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
 "pst.min.js": "87539e3b5c70a39f54490335f190d604",
-"assets/NOTICES": "7c4f50dede21864ea53aec540d67290b",
+"assets/NOTICES": "db153b39a82b4d9126221db4884af5b5",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/AssetManifest.json": "7977cbeb72010fbee606a2b2709bc9ea",
@@ -53,7 +53,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
