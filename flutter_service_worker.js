@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
-"main.dart.js": "589389f6e1df5cd5f934f40546936447",
+"main.dart.js": "0cff4a35573b9ab5bf1027359c1d24bf",
 "icons/Icon-192.png": "885b984ac13230ad7e85436d0bf1adb3",
 "icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
 "sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
