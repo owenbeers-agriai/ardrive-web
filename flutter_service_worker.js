@@ -9,7 +9,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
 "sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
 "pst.min.js": "87539e3b5c70a39f54490335f190d604",
-"assets/NOTICES": "18794b138399e297408e2846818a7c76",
+"assets/NOTICES": "c165e778c4f361a021f60f6e4f322735",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/AssetManifest.json": "7977cbeb72010fbee606a2b2709bc9ea",
@@ -31,11 +31,11 @@ const RESOURCES = {
 "assets/assets/images/profile/profile_new_user_upload.png": "170bdb068ff6561f47d3faf0a3ece0b1",
 "assets/assets/images/profile/profile_new_user_payment.png": "2891069dbff5254df26834bd7ac4a608",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "5ee1f285611168cd6df377fd21151aae",
-"version.json": "b707f51c1c0147506d74a238ff252173",
+"version.json": "539398c6d53c88123ad2ba6c3b0f4daf",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "favicon.png": "49623618e34e76925ba5a44f8dc95a89",
-"index.html": "94c54c56b4af11aa95811c64bbde6f2d",
-"/": "94c54c56b4af11aa95811c64bbde6f2d"
+"index.html": "8223ab58bce93124b37ffc5027a568e6",
+"/": "8223ab58bce93124b37ffc5027a568e6"
 };
 
 // The application shell files that are downloaded before a service worker can
