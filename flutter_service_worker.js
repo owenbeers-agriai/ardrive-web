@@ -12,7 +12,7 @@ const RESOURCES = {
 "/": "5add2c0e2c992a1bb4f7de58f053b679",
 "sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "5ee1f285611168cd6df377fd21151aae",
-"assets/NOTICES": "51bf65de294228285d34001d557e8a36",
+"assets/NOTICES": "fbe59de5bb3901348a819463142be54c",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/AssetManifest.json": "7977cbeb72010fbee606a2b2709bc9ea",
 "assets/assets/images/profile/profile_new_user_permanent.png": "793229f904b86818b111355364ec46f7",
@@ -34,7 +34,7 @@ const RESOURCES = {
 "assets/assets/config/prod.json": "3d6c5819f04179660960f51274c830aa",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
-"main.dart.js": "d7e269825867e8200ed31185e2637079",
+"main.dart.js": "4f8b1face8e46bfd48bfa03a224b4815",
 "version.json": "99d0ceccadd2490456b0d9eed3354096"
 };
 
@@ -53,7 +53,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value, {'cache': 'reload'})));
+        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
     })
   );
 });
