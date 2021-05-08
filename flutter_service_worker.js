@@ -30,7 +30,7 @@ const RESOURCES = {
 "sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
-"pst.min.js": "87539e3b5c70a39f54490335f190d604",
+"pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
 "version.json": "f4f082f11cad040f9da86f7edfab204f",
