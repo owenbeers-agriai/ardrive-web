@@ -34,7 +34,7 @@ const RESOURCES = {
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "version.json": "b26a94970f432fb52fa370dac5f6cda1",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
-"main.dart.js": "df4dc9571f3a6c4ca2f011c865d884c3",
+"main.dart.js": "29203bdf28d6080b1bba3ae8ffe1bdef",
 "sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "index.html": "cc05d5055cdf0e96986e7bcb1c2e3aec",
