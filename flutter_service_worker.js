@@ -27,7 +27,7 @@ const RESOURCES = {
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "5ee1f285611168cd6df377fd21151aae",
-"assets/NOTICES": "55840cc023ebad0269b11280dc02e50a",
+"assets/NOTICES": "6553b4ba9509dc163534f4674109109a",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
