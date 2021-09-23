@@ -14,6 +14,14 @@ class FlutterDropzone {
     if (onLoaded != null) onLoaded();
   }
 
+  updateHandlers(onLoaded, onError, onHover, onDrop, onLeave) {
+    this.onHover = onHover;
+    this.onDrop = onDrop;
+    this.onLeave = onLeave;
+    this.dropMIME = null;
+    this.dropOperation = 'copy';
+  }
+
   dragover_handler(event) {
     event.preventDefault();
     event.dataTransfer.dropEffect = this.dropOperation;
@@ -32,7 +40,7 @@ class FlutterDropzone {
       for (var i = 0; i < event.dataTransfer.items.length; i++) {
         var item = event.dataTransfer.items[i];
         var match = (item.kind === 'file');
-        if (this.dropMIME != null && !this.dropMIME.includes(item.mime))
+        if (this.dropMIME != null && !this.dropMIME.includes(item.type))
           match = false;
 
         if (match) {
@@ -58,18 +66,24 @@ class FlutterDropzone {
 var flutter_dropzone_web = {
   setMIME: function(container, mime) {
     container.FlutterDropzone.setMIME(mime);
+    return true;
   },
 
   setOperation: function(container, operation) {
     container.FlutterDropzone.setOperation(operation);
+    return true;
   },
 
   setCursor: function(container, cursor) {
     container.style.cursor = cursor;
+    return true;
   },
 
   create: function(container, onLoaded, onError, onHover, onDrop, onLeave) {
-    container.FlutterDropzone = new FlutterDropzone(container, onLoaded, onError, onHover, onDrop, onLeave);
+    if (container.FlutterDropzone === undefined)
+      container.FlutterDropzone = new FlutterDropzone(container, onLoaded, onError, onHover, onDrop, onLeave);
+    else
+      container.FlutterDropzone.updateHandlers(onLoaded, onError, onHover, onDrop, onLeave);
   },
 };
 
