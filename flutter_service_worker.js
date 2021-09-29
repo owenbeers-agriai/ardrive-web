@@ -3,12 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "sql-wasm.wasm": "ea7edc8cc0702b48cc93bf41e5b6cc61",
+  "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
-"index.html": "cc05d5055cdf0e96986e7bcb1c2e3aec",
-"/": "cc05d5055cdf0e96986e7bcb1c2e3aec",
-"sql-wasm.js": "eea55d481cf4aeb2bc2d7c90eec64a25",
-"assets/NOTICES": "c3ece379ef182922d7fac0b980cd2795",
+"index.html": "ba7c2536da7c36d325a47278ec91cc56",
+"/": "ba7c2536da7c36d325a47278ec91cc56",
+"sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
+"assets/NOTICES": "27172bebd53ffa8b37b0d4a436e4dd80",
 "assets/assets/config/prod.json": "3d6c5819f04179660960f51274c830aa",
 "assets/assets/config/dev.json": "3d6c5819f04179660960f51274c830aa",
 "assets/assets/images/profile/profile_welcome.png": "8ce2b109cbe2aa3155d501be5bc47dba",
@@ -37,7 +37,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
-"main.dart.js": "c456411f20a19de399a689bf5278f01b",
+"main.dart.js": "3a2c6396d9b9beb5a108ea76eadbd87d",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc"
 };
 
