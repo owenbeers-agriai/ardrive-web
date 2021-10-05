@@ -37,7 +37,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
-"main.dart.js": "a4e932fd916c334cbca34ea5f4d72308",
+"main.dart.js": "c306ea77ef7848de525856f7700cc075",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc"
 };
 
