@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "7212046aa4839c524f56c743c9a8fa54",
+  "version.json": "f2aedb5d37b1b5cbe710b5e3175d7adf",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
@@ -34,11 +34,11 @@ const RESOURCES = {
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
-"main.dart.js": "04b73c09e81e2f190619f0c14940aaee",
+"main.dart.js": "1e7074c05462d1fa6394ce85de073059",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"index.html": "c2ac3f368c322b9a070773c0a72914a6",
-"/": "c2ac3f368c322b9a070773c0a72914a6"
+"index.html": "3d0627ef00910eaba437303103302b72",
+"/": "3d0627ef00910eaba437303103302b72"
 };
 
 // The application shell files that are downloaded before a service worker can
