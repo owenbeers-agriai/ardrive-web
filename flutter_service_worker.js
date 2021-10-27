@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "cf062d3b7be75249d30ff4c1e54f826a",
+  "version.json": "f2c0ad1ef84860b0c172bd737e8e938a",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
@@ -37,8 +37,8 @@ const RESOURCES = {
 "main.dart.js": "806b7e4522fc434ad29b8b2d640fdabd",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"index.html": "22546834a17a100f035e7ea052361558",
-"/": "22546834a17a100f035e7ea052361558"
+"index.html": "75871b3df33a69ea04b52ad6aa4adbf3",
+"/": "75871b3df33a69ea04b52ad6aa4adbf3"
 };
 
 // The application shell files that are downloaded before a service worker can
