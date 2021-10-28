@@ -3,13 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "f2c0ad1ef84860b0c172bd737e8e938a",
+  "version.json": "b7cd029b3b2c67ddef65a6c6c24d249e",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "78529e5f75ec7720a2533ebf5484e47a",
+"assets/NOTICES": "1e70aa4449c49f04d0fdc31b334ff2d1",
 "assets/assets/images/profile/profile_new_user_delete.png": "6eb625030efb33a901a7be4531e015da",
 "assets/assets/images/profile/profile_unlock.png": "bb761b58972221c0bb8a330c1be86f3a",
 "assets/assets/images/profile/profile_welcome.png": "8ce2b109cbe2aa3155d501be5bc47dba",
@@ -34,11 +34,11 @@ const RESOURCES = {
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
-"main.dart.js": "7a4dfd19e8b70b9635b72169d2ab4cf0",
+"main.dart.js": "914efc904c2516b46348c713fd593cef",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"index.html": "75871b3df33a69ea04b52ad6aa4adbf3",
-"/": "75871b3df33a69ea04b52ad6aa4adbf3"
+"index.html": "7fa9d8c67f05364bda2ca932693eba2f",
+"/": "7fa9d8c67f05364bda2ca932693eba2f"
 };
 
 // The application shell files that are downloaded before a service worker can
