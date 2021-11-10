@@ -38,7 +38,7 @@ const RESOURCES = {
 "assets/assets/images/brand/logo-horiz-no-subtitle.png": "7f2b427acfa0012da79aa7a8251d148b",
 "assets/AssetManifest.json": "583e734794cb1c08e4b1c8d582c84c70",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
-"main.dart.js": "34f8a25ff1822bdeb8b9375e9c20106f"
+"main.dart.js": "a39947fcd6ea8b831e71eb18a552e66e"
 };
 
 // The application shell files that are downloaded before a service worker can
