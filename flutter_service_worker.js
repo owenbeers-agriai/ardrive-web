@@ -26,13 +26,13 @@ const RESOURCES = {
 "assets/assets/fonts/Montserrat-Regular.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/assets/fonts/OpenSans-Bold.ttf": "1025a6e0fb0fa86f17f57cc82a6b9756",
-"assets/NOTICES": "1eb7f61a17cf5df85131e2ea64317c3d",
+"assets/NOTICES": "7a5c790ceb464edc6a0bab2357fc23af",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "index.html": "0502b02bcc790d4f6cf471af8af123a0",
 "/": "0502b02bcc790d4f6cf471af8af123a0",
-"version.json": "7ebdb68ff83d4222cbd008be4c0b31cd",
+"version.json": "cb45b0ea40710556f16236defce04cbf",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
@@ -40,7 +40,11 @@ const RESOURCES = {
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
-"main.dart.js": "b843236e54b2e2f3f8e694b46026b380"
+"main.dart.js": "4719b592158469559bc98fe8fa5eee86",
+"canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
+"canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
+"canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
+"canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498"
 };
 
 // The application shell files that are downloaded before a service worker can
