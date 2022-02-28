@@ -38,34 +38,34 @@ ThemeData appTheme() {
 
 TextTheme _buildTextTheme(TextTheme base) => base
     .copyWith(
-      headline1: GoogleFonts.montserrat(
+      headline1: TextStyle(fontFamily: 'Approach',
           fontSize: 97, fontWeight: FontWeight.w300, letterSpacing: -1.5),
-      headline2: GoogleFonts.montserrat(
+      headline2: TextStyle(fontFamily: 'Approach',
           fontSize: 61, fontWeight: FontWeight.w300, letterSpacing: -0.5),
       headline3:
-          GoogleFonts.montserrat(fontSize: 48, fontWeight: FontWeight.w400),
-      headline4: GoogleFonts.montserrat(
+          TextStyle(fontFamily: 'Approach',fontSize: 48, fontWeight: FontWeight.w400),
+      headline4: TextStyle(fontFamily: 'Approach',
           fontSize: 34, fontWeight: FontWeight.w400, letterSpacing: 0.25),
-      headline5: GoogleFonts.montserrat(
+      headline5: TextStyle(fontFamily: 'Approach',
           fontSize: 24,
           fontWeight: FontWeight.w400,
           letterSpacing: 2,
           color: kPrimarySwatch),
-      headline6: GoogleFonts.openSans(
+      headline6: TextStyle(fontFamily: 'Approach',
           fontSize: 16, fontWeight: FontWeight.w400, letterSpacing: 2),
-      subtitle1: GoogleFonts.openSans(
+      subtitle1: TextStyle(fontFamily: 'Approach',
           fontSize: 16, fontWeight: FontWeight.w400, letterSpacing: 0.15),
-      subtitle2: GoogleFonts.openSans(
+      subtitle2: TextStyle(fontFamily: 'Approach',
           fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 0.15),
-      bodyText1: GoogleFonts.openSans(
+      bodyText1: TextStyle(fontFamily: 'Approach',
           fontSize: 16, fontWeight: FontWeight.w400, letterSpacing: 0.5),
-      bodyText2: GoogleFonts.openSans(
+      bodyText2: TextStyle(fontFamily: 'Approach',
           fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 0.25),
-      button: GoogleFonts.montserrat(
+      button: TextStyle(fontFamily: 'Approach',
           fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 1.25),
-      caption: GoogleFonts.openSans(
+      caption: TextStyle(fontFamily: 'Approach',
           fontSize: 12, fontWeight: FontWeight.w400, letterSpacing: 0.4),
-      overline: GoogleFonts.openSans(
+      overline: TextStyle(fontFamily: 'Approach',
           fontSize: 10, fontWeight: FontWeight.w400, letterSpacing: 1.5),
     )
     .apply(

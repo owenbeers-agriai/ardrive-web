@@ -44,34 +44,29 @@ class _AppShellState extends State<AppShell> {
                 elevation: 0.0,
                 backgroundColor: Colors.transparent,
                 actions: [
-                  IconButton(
-                    icon: const Icon(Icons.people_alt),
-                    tooltip: 'CommunityXYZ',
-                    onPressed: () => launch(
-                      'https://community.xyz/#-8A6RexFkpfWwuyVO98wzSFZh0d6VJuI-buTJvlwOJQ',
-                    ),
-                  ),
-                  IconButton(
-                    icon: PortalEntry(
-                      visible: _showProfileOverlay,
-                      portal: GestureDetector(
-                        behavior: HitTestBehavior.opaque,
-                        onTap: () => toggleProfileOverlay(),
-                      ),
-                      child: PortalEntry(
+                  Padding(
+                    padding: const EdgeInsets.only(right: 24),
+                    child: IconButton(
+                      icon: PortalEntry(
                         visible: _showProfileOverlay,
-                        portal: Padding(
-                          padding: const EdgeInsets.only(top: 56),
-                          child: ProfileOverlay(),
+                        portal: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          onTap: () => toggleProfileOverlay(),
                         ),
-                        portalAnchor: Alignment.topRight,
-                        childAnchor: Alignment.topRight,
-                        child: const Icon(Icons.account_circle),
-                      ),
+                        child: PortalEntry(
+                          visible: _showProfileOverlay,
+                          portal: Padding(
+                            padding: const EdgeInsets.only(top: 56),
+                            child: ProfileOverlay(),
+                          ),
+                          portalAnchor: Alignment.topRight,
+                          childAnchor: Alignment.topRight,
+                          child: const Icon(Icons.account_circle),
+                        ),
                     ),
                     tooltip: 'Profile',
                     onPressed: () => toggleProfileOverlay(),
-                  ),
+                  )),
                 ],
               );
           Widget _buildPage(scaffold) => BlocBuilder<SyncCubit, SyncState>(

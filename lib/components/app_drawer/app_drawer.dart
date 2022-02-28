@@ -144,8 +144,10 @@ class AppDrawer extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Image.asset(
         R.images.brand.logoHorizontalNoSubtitleDark,
-        height: 32,
-        fit: BoxFit.contain,
+        height: 100,
+        width: 200,
+        // fit: BoxFit.contain,
+        
       ),
     );
   }
@@ -219,6 +221,7 @@ class AppDrawer extends StatelessWidget {
                         width: 164,
                         height: 36,
                         child: FloatingActionButton.extended(
+                          backgroundColor: LightColors.kPrimarySwatch.shade900.withOpacity(1),
                           onPressed: null,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
@@ -226,6 +229,7 @@ class AppDrawer extends StatelessWidget {
                             'NEW',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              color: LightColors.kOnDarkSurfaceHighEmphasis
                             ),
                           ),
                         ),
@@ -238,6 +242,7 @@ class AppDrawer extends StatelessWidget {
                         SizedBox(
                           width: 164,
                           height: 36,
+
                           child: FloatingActionButton.extended(
                             onPressed: null,
                             backgroundColor: Colors.grey,

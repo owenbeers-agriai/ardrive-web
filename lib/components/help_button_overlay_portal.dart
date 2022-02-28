@@ -15,11 +15,11 @@ class FloatingHelpButtonPortalEntry extends StatelessWidget {
   Widget build(BuildContext context) => PortalEntry(
         portal: Padding(
           padding: const EdgeInsets.only(right: 16, bottom: 16),
-          child: FloatingActionButton(
-            tooltip: 'Help',
-            onPressed: () => launch('https://ardrive.typeform.com/to/pGeAVvtg'),
-            child: const Icon(Icons.help_outline),
-          ),
+          // child: FloatingActionButton(
+          //   tooltip: 'Help',
+          //   onPressed: () => launch('https://ardrive.typeform.com/to/pGeAVvtg'),
+          //   child: const Icon(Icons.help_outline),
+          // ),
         ),
         portalAnchor: Alignment.bottomRight,
         childAnchor: Alignment.bottomRight,

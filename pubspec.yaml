@@ -79,3 +79,9 @@ flutter:
     - assets/fonts/
     - assets/images/brand/
     - assets/images/profile/
+  fonts:
+    - family: Approach
+      fonts:
+        - asset: assets/fonts/Approach-Regular.otf
+        - asset: assets/fonts/Approach-Bold.otf
+          weight: 700

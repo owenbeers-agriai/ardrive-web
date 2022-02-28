@@ -1,37 +1,37 @@
 part of 'theme.dart';
 
 class LightColors {
-  static const kPrimaryValue = 0xFF700327;
+  static const kPrimaryValue = 0xFFA1D4AB;
   static const kPrimarySwatch = MaterialColor(
-    kPrimaryValue,
-    <int, Color>{
-      50: Color(0xFFfae2e3),
-      100: Color(0xFFf3b5ba),
-      200: Color(0xFFe8878e),
-      300: Color(0xFFdb5a64),
-      400: Color(0xFFd03c47),
-      500: Color(0xFFc5252d),
-      600: Color(0xFFb61f2d),
-      700: Color(0xFFa3192c),
-      800: Color(0xFF91102b),
-      900: Color(kPrimaryValue),
-    },
-  );
+  kPrimaryValue,
+  <int, Color>{
+    50: Color(0xFFA1D4AB),
+    100: Color(0xFFA1D4AB),
+    200: Color(0xFFA1D4AB),
+    300: Color(0xFFA1D4AB),
+    400: Color(0xFFA1D4AB),
+    500: Color(0xFFA1D4AB),
+    600: Color(0xFFA1D4AB),
+    700: Color(0xFFA1D4AB),
+    800: Color(0xFFA1D4AB),
+    900: Color(kPrimaryValue),
+  },
+);
 
-  static const kSecondaryValue = 0xFF344955;
+  static const kSecondaryValue = 0xFFA1D4AB;
   static const kSecondarySwatch = MaterialColor(
     kPrimaryValue,
     <int, Color>{
-      50: Color(0xFFE8F0F6),
-      100: Color(0xFFCBD9E1),
-      200: Color(0xFFADC0CB),
-      300: Color(0xFF8DA6B5),
-      400: Color(0xFF7592A3),
-      500: Color(0xFF5D7F92),
-      600: Color(0xFF517081),
-      700: Color(0xFF425C6A),
+      50: Color(0xFFA1D4AB),
+      100: Color(0xFFA1D4AB),
+      200: Color(0xFFA1D4AB),
+      300: Color(0xFFA1D4AB),
+      400: Color(0xFFA1D4AB),
+      500: Color(0xFFA1D4AB),
+      600: Color(0xFFA1D4AB),
+      700: Color(0xFFA1D4AB),
       800: Color(kPrimaryValue),
-      900: Color(0xFF23343E),
+      900: Color(0xFFA1D4AB),
     },
   );
 
@@ -40,46 +40,46 @@ class LightColors {
   final onSurfaceFocusColor = kPrimarySwatch.withOpacity(0.12);
   final onSurfaceSelectedColor = kPrimarySwatch.withOpacity(0.12);
 
-  static const kDarkSurfaceColor = Color(0xFF333333);
-  static const kOnDarkSurfaceHighEmphasis = Colors.white;
-  static const kOnDarkSurfaceMediumEmphasis = Colors.white60;
-  static const kOnLightSurfaceMediumEmphasis = Color(0xFF121212);
+  static const kDarkSurfaceColor = Color(0xFFA1D4AB);
+  static const kOnDarkSurfaceHighEmphasis = Colors.black87;
+  static const kOnDarkSurfaceMediumEmphasis = Colors.black87;
+  static const kOnLightSurfaceMediumEmphasis = Color(0xFFA1D4AB);
   final onDarkSurfaceSelectedColor = kPrimarySwatch.shade300.withOpacity(0.12);
 
-  final errorColor = kPrimarySwatch.shade300;
+  final errorColor = Colors.red;
 }
 
-const kPrimaryValue = 0xFFFE0230;
+const kPrimaryValue = 0xFF213339;
 const kPrimarySwatch = MaterialColor(
   kPrimaryValue,
   <int, Color>{
-    50: Color(0xFFfae2e3),
-    100: Color(0xFFf3b5ba),
-    200: Color(0xFFe8878e),
-    300: Color(0xFFdb5a64),
-    400: Color(0xFFd03c47),
-    500: Color(0xFFc5252d),
-    600: Color(0xFFb61f2d),
-    700: Color(0xFFa3192c),
-    800: Color(0xFF91102b),
+    50: Color(0xFF57AF7C),
+    100: Color(0xFF57AF7C),
+    200: Color(0xFF268575),
+    300: Color(0xFF268575),
+    400: Color(0xFF1D5B5E),
+    500: Color(0xFF1D5B5E),
+    600: Color(kPrimaryValue),
+    700: Color(kPrimaryValue),
+    800: Color(kPrimaryValue),
     900: Color(kPrimaryValue),
   },
 );
 
-const kSecondaryValue = 0xFF344955;
+const kSecondaryValue = 0xFFA1D4AB;
 const kSecondarySwatch = MaterialColor(
   kPrimaryValue,
   <int, Color>{
-    50: Color(0xFFE8F0F6),
-    100: Color(0xFFCBD9E1),
-    200: Color(0xFFADC0CB),
-    300: Color(0xFF8DA6B5),
-    400: Color(0xFF7592A3),
-    500: Color(0xFF5D7F92),
-    600: Color(0xFF517081),
-    700: Color(0xFF425C6A),
-    800: Color(kPrimaryValue),
-    900: Color(0xFF23343E),
+    50: Color(0xFFA1D4AB),
+    100: Color(0xFFA1D4AB),
+    200: Color(0xFFA1D4AB),
+    300: Color(0xFFA1D4AB),
+    400: Color(0xFFA1D4AB),
+    500: Color(0xFFA1D4AB),
+    600: Color(0xFFA1D4AB),
+    700: Color(0xFFA1D4AB),
+    800: Color(0xFFA1D4AB),
+    900: Color(kPrimaryValue),
   },
 );
 
@@ -88,9 +88,9 @@ final onSurfaceHoveredColor = kPrimarySwatch.withOpacity(0.04);
 final onSurfaceFocusColor = kPrimarySwatch.withOpacity(0.12);
 final onSurfaceSelectedColor = kPrimarySwatch.withOpacity(0.12);
 
-const kDarkSurfaceColor = Color(0xFF0A0B09);
+const kDarkSurfaceColor = Color(kPrimaryValue);
 const kOnDarkSurfaceHighEmphasis = Colors.white;
 const kOnDarkSurfaceMediumEmphasis = Colors.white60;
 final onDarkSurfaceSelectedColor = kPrimarySwatch.shade300.withOpacity(0.12);
 
-final errorColor = kPrimarySwatch.shade300;
+final errorColor = Colors.red;
