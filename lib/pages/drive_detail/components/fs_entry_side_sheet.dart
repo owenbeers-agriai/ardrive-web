@@ -22,7 +22,7 @@ class FsEntrySideSheet extends StatelessWidget {
             driveDao: context.read<DriveDao>(),
           ),
           child: DefaultTabController(
-            length: 2,
+            length: 3,
             child: BlocBuilder<FsEntryInfoCubit, FsEntryInfoState>(
               builder: (context, state) => state is FsEntryInfoSuccess
                   ? Column(
@@ -41,6 +41,7 @@ class FsEntrySideSheet extends StatelessWidget {
                         ),
                         TabBar(
                           tabs: const [
+                            Tab(text: 'PREVIEW'),
                             Tab(text: 'DETAILS'),
                             Tab(text: 'ACTIVITY'),
                           ],
@@ -48,6 +49,7 @@ class FsEntrySideSheet extends StatelessWidget {
                         Expanded(
                           child: TabBarView(
                             children: [
+                              _buildPreviewTab(context, state),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
@@ -380,7 +382,44 @@ class FsEntrySideSheet extends StatelessWidget {
           ),
         ),
       );
-}
+  Widget _buildPreviewTab(BuildContext context, FsEntryInfoSuccess state) =>
+      Padding(
+          padding: const EdgeInsets.only(top: 16),
+          child: BlocProvider(
+              key: ValueKey(driveId +
+                  ([folderId, fileId].firstWhere((e) => e != null,
+                      orElse: () => Random().nextInt(1000).toString())!)),
+              create: (context) => FsEntryInfoCubit(
+                    driveId: driveId,
+                    folderId: folderId,
+                    fileId: fileId,
+                    driveDao: context.read<DriveDao>(),
+                  ),
+              child: BlocBuilder<FsEntryInfoCubit, FsEntryInfoState>(
+                  builder: (context, state) {
+                if (state is FsEntryInfoSuccess<FileEntry>) {
+                  final arweaveGateway =
+                      context.read<AppConfig>().defaultArweaveGatewayUrl;
+                  var extension;
+                  try {
+                    extension = state.entry.name.split('.')[1];
+                  } catch (e) {
+                    extension = '';
+                  }
+
+                  return FilePreview(
+                      networkPath: '$arweaveGateway/${state.entry.dataTxId}',
+                      fileSize: state.entry.size,
+                      fileExtension: extension,
+                      fileId: fileId as String,
+                      driveId: driveId,
+                      arweave: context.read<ArweaveService>(),
+                      profileCubit: context.read<ProfileCubit>(),
+                      driveDao: context.read<DriveDao>());
+                }
+                return Center(child: Text('No preview to display'));
+              })));
+} // Class
 
 class CopyIconButton extends StatelessWidget {
   final String value;

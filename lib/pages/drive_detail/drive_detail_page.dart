@@ -11,6 +11,7 @@ import 'package:ardrive/l11n/l11n.dart';
 import 'package:ardrive/models/models.dart';
 import 'package:ardrive/pages/congestion_warning_wrapper.dart';
 import 'package:ardrive/pages/drive_detail/components/drive_file_drop_zone.dart';
+import 'package:ardrive/services/services.dart';
 import 'package:ardrive/theme/theme.dart';
 import 'package:filesize/filesize.dart';
 import 'package:flutter/foundation.dart';
@@ -21,8 +22,9 @@ import 'package:intersperse/intersperse.dart';
 import 'package:moor/moor.dart' show OrderingMode;
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:timeago/timeago.dart';
-import 'package:url_launcher/link.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'components/file_preview.dart';
 
 part 'components/drive_detail_actions_row.dart';
 part 'components/drive_detail_breadcrumb_row.dart';
