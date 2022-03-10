@@ -41,6 +41,11 @@ Finally, to start a development instance for web, run:
 flutter run -d Chrome
 ```
 
+Build for web
+```shell
+flutter build web
+```
+
 All changes made to `dev` will be continuously deployed to [staging.ardrive.io](https://staging.ardrive.io). All PRs from this repo merging into `dev` will trigger a preview build that can be shared freely.
 
 ## Release
