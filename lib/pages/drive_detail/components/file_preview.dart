@@ -59,10 +59,11 @@ class _FilePreviewState extends State<FilePreview> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return SingleChildScrollView(
+        child: Padding(
       padding: EdgeInsets.all(10),
       child: getDisplayWidget(),
-    );
+    ));
   }
 
   Widget getDisplayWidget() {
@@ -70,6 +71,8 @@ class _FilePreviewState extends State<FilePreview> {
       return _buildFilePreviewWidget();
     } else if (isDownloading == ViewType.unsupported_type) {
       return _buildUnsupportedTypeWidget();
+    } else if (isDownloading == ViewType.too_large) {
+      return _buildFileTooLargeWidget();
     } else {
       return _buildInProgressWidget();
     }
@@ -109,30 +112,37 @@ class _FilePreviewState extends State<FilePreview> {
     final validExtension = acceptedExtensions.contains(widget.fileExtension);
     if (validExtension && widget.fileSize < MAX_FILE_PREVIEW_SIZE_BYTES) {
       final dataRes = await http.get(Uri.parse(widget.networkPath));
-      late Uint8List dataBytes;
-      final drive =
-          await widget._driveDao.driveById(driveId: widget.driveId).getSingle();
-      if (drive.isPublic) {
-        dataBytes = dataRes.bodyBytes;
-      } else if (drive.isPrivate) {
-        final profile = widget._profileCubit.state as ProfileLoggedIn;
-        final file = await widget._driveDao
-            .fileById(driveId: widget.driveId, fileId: widget.fileId)
+      if (dataRes.statusCode >= 400) {
+        setState(() {
+          isDownloading = ViewType.fail;
+        });
+      } else {
+        late Uint8List dataBytes;
+        final drive = await widget._driveDao
+            .driveById(driveId: widget.driveId)
             .getSingle();
-        final dataTx =
-            await (widget._arweave.getTransactionDetails(file.dataTxId));
+        if (drive.isPublic) {
+          dataBytes = dataRes.bodyBytes;
+        } else if (drive.isPrivate) {
+          final profile = widget._profileCubit.state as ProfileLoggedIn;
+          final file = await widget._driveDao
+              .fileById(driveId: widget.driveId, fileId: widget.fileId)
+              .getSingle();
+          final dataTx =
+              await (widget._arweave.getTransactionDetails(file.dataTxId));
 
-        final fileKey = await widget._driveDao
-            .getFileKey(widget.driveId, widget.fileId, profile.cipherKey);
-        if (dataTx != null) {
-          dataBytes =
-              await decryptTransactionData(dataTx, dataRes.bodyBytes, fileKey!);
+          final fileKey = await widget._driveDao
+              .getFileKey(widget.driveId, widget.fileId, profile.cipherKey);
+          if (dataTx != null) {
+            dataBytes = await decryptTransactionData(
+                dataTx, dataRes.bodyBytes, fileKey!);
+          }
         }
+        setState(() {
+          content = dataBytes; // Images can just be fetched raw
+        });
       }
-      setState(() {
-        content = dataBytes; // Images can just be fetched raw
-      });
-    } else {}
+    }
 
     setState(() {
       if (mounted) {
